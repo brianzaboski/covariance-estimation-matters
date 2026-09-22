@@ -1,0 +1,4 @@
+step,R2,adj_R2,df_model,n,dR2,F_change,df_num,df_den,p_change
+1_demographics,0.0209,0.0092,3,256,,,,,
+2_severity,0.5457,0.5366,5,256,0.5248,144.3928,2.0,250.0,0.0
+3_deviation,0.5475,0.5366,6,256,0.0018,1.0155,1.0,249.0,0.3146

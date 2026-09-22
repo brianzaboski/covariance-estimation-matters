@@ -1,0 +1,11 @@
+Feature,k items,N scored,N complete (alpha),Alpha,95% CI,Mean inter-item r,Mdn (IQR),N/A (%),Note
+BFAS Withdrawal,10,297,295,0.909,"[0.892, 0.924]",0.5,3.50 (1.30),8.62,aspect
+BFAS Volatility,10,297,297,0.916,"[0.901, 0.929]",0.519,3.00 (1.30),8.62,aspect
+BFAS Compassion,10,297,296,0.882,"[0.861, 0.901]",0.434,4.20 (0.60),8.62,aspect
+BFAS Politeness,10,297,297,0.715,"[0.664, 0.761]",0.205,4.00 (0.80),8.62,aspect
+BFAS Industriousness,10,297,295,0.883,"[0.862, 0.902]",0.43,3.10 (1.20),8.62,aspect
+BFAS Orderliness,10,297,296,0.801,"[0.765, 0.833]",0.294,3.70 (1.00),8.62,aspect
+BFAS Enthusiasm,10,297,296,0.869,"[0.846, 0.890]",0.399,3.60 (1.10),8.62,aspect
+BFAS Assertiveness,10,297,297,0.851,"[0.824, 0.875]",0.364,3.30 (0.90),8.62,aspect
+BFAS Intellect,10,297,295,0.815,"[0.782, 0.845]",0.308,3.80 (0.80),8.62,aspect
+BFAS Openness,10,297,296,0.78,"[0.741, 0.816]",0.265,4.00 (0.70),8.62,aspect

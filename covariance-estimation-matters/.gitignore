@@ -1,0 +1,14 @@
+# Registry data never enters version control. The synthetic file is the one
+# exception, and it is generated from published aggregates.
+data/*.csv
+!data/synthetic/*.csv
+
+# Outputs that identify participants or that a later run superseded
+outputs/final_analyzed_dataset.csv
+outputs/TableS_step3_top_leverage.csv
+outputs/Study1_summary_v14.csv
+
+__pycache__/
+*.pyc
+.venv/
+.DS_Store

@@ -1,0 +1,10 @@
+# Recorded by the analysis scripts at run time; see outputs/versions_*.json.
+# scikit-learn is pinned exactly: MinCovDet results differ across releases.
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.8.0
+# pandas, matplotlib and statsmodels are not pinned: nothing here depends
+# on their versions, and pinning them blocks installation on newer Pythons.
+pandas
+matplotlib
+statsmodels

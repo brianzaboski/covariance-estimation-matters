@@ -1,0 +1,10 @@
+,value
+C(sex)[T.Male],1.0234
+C(sex)[T.Other],1.0281
+age,1.0274
+docs_total,2.0575
+gbdi_total_score,2.1132
+multidimensional_deviance,3.2699
+overlap_R2_dev_on_DOCS_gBDI,0.6839
+zero_order_r_dev_QoL,-0.5277
+zero_order_p,0.0

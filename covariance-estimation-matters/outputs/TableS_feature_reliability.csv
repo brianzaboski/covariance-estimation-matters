@@ -1,0 +1,12 @@
+Feature,k items,N scored,N complete (alpha),Alpha,95% CI,Mean inter-item r,Mdn (IQR),N/A (%),Note
+gBDI,18,319,319,0.93,"[0.918, 0.940]",0.425,13.00 (16.00),1.85,matches Table 1
+SHAPS (dichotomized),14,318,318,0.788,"[0.752, 0.821]",0.211,0.00 (1.00),2.15,matches Table 1; alpha on the 0/1 items
+PSC Total,23,301,300,0.876,"[0.855, 0.896]",0.234,33.00 (13.00),7.38,matches Table 1
+DOCS Total,20,316,314,0.935,"[0.924, 0.945]",0.423,23.00 (21.00),2.77,matches Table 1
+OCTCDQ Harm Avoidance,10,300,297,0.958,"[0.950, 0.964]",0.694,32.00 (18.00),7.69,new; Table 1 reports the 20-item total
+OCTCDQ Incompleteness,10,300,300,0.955,"[0.947, 0.962]",0.68,33.00 (16.00),7.69,new; Table 1 reports the 20-item total
+BFAS Neuroticism,20,297,295,0.939,"[0.928, 0.949]",0.435,3.25 (1.15),8.62,new; not in Table 1
+BFAS Extraversion,20,297,296,0.885,"[0.866, 0.903]",0.278,3.45 (0.75),8.62,new; not in Table 1
+BFAS Conscientiousness,20,297,294,0.849,"[0.823, 0.873]",0.217,3.45 (0.80),8.62,new; not in Table 1
+BFAS Agreeableness,20,297,296,0.858,"[0.834, 0.881]",0.249,4.05 (0.60),8.62,new; not in Table 1
+BFAS Openness/Intellect,20,297,295,0.796,"[0.761, 0.829]",0.167,3.85 (0.60),8.62,new; not in Table 1

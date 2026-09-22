@@ -1,0 +1,12 @@
+feature,mcd_default_minus_hc_mean,mcd_sf1_minus_hc_mean
+gbdi_total_score,-0.3893,-0.128
+shaps_total_score_snaith,-0.1557,-0.1158
+psc_total_score,-0.5361,-0.1321
+docs_total,-0.4111,-0.1706
+octcdq_incompleteness_score,-0.3613,-0.1734
+octcdq_harm_score,-0.4245,-0.1892
+bfas_domain_neuroticism,-0.3257,-0.0893
+bfas_domain_extraversion,0.2843,0.0741
+bfas_domain_conscientiousness,0.2197,0.0533
+bfas_domain_agreeableness,0.2041,0.0726
+bfas_domain_openness_intellect,0.2147,0.0529

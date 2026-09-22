@@ -1,0 +1,16 @@
+The written materials and summary outputs in this repository are licensed under
+the Creative Commons Attribution 4.0 International License (CC BY 4.0). This
+covers README.md, MANIFEST.md, CHANGELOG.md, everything under docs/, and the
+summary tables and figures under outputs/.
+
+You may share and adapt them for any purpose, including commercially, provided
+you give appropriate credit, link to the license, and indicate whether changes
+were made.
+
+Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary: https://creativecommons.org/licenses/by/4.0/
+
+The code is licensed separately under the MIT License; see LICENSE.
+
+The clinical registry data are covered by neither licence and are not included
+in this repository. See README.md.

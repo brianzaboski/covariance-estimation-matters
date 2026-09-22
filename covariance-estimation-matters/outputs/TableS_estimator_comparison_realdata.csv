@@ -1,0 +1,7 @@
+estimator,condition_number,rank,n_retained,center,hc_median_d2,ocd_median_d2,ocd_hc_ratio,shrinkage
+sample,36.6457,11,62,HC mean,9.8088,94.8185,9.6667,
+ledoit_wolf,8.9622,11,62,HC mean,7.2242,79.232,10.9675,0.2912
+mcd_default,172.2338,11,38,HC mean,22.4125,1570.7311,70.0827,
+mcd_default,172.2338,11,38,MCD location,16.5849,1752.3048,105.6564,
+mcd_sf1,31.2528,11,57,HC mean,10.7611,189.8036,17.6379,
+mcd_sf1,31.2528,11,57,MCD location,10.1691,196.6531,19.3384,

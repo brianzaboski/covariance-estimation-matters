@@ -1,0 +1,2 @@
+max_cooks_d,cooks_cutoff_4_over_n,n_cooks_gt_cutoff,max_leverage,mean_leverage,shapiro_resid_p,hc3_dev_coef,hc3_dev_se,hc3_dev_t,hc3_dev_p,trimmed_n,trimmed_dR2,trimmed_F,trimmed_p
+0.1063,0.0156,14,0.2671,0.0273,0.8692,0.0092,0.0086,1.0656,0.2866,242,0.0005,0.2746,0.6007

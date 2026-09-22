@@ -1,0 +1,12 @@
+,mean_z_top_decile,sd_z_top_decile,mean_z_all_ocd
+docs_total,9.558,3.45,5.9
+gbdi,9.328,3.575,4.797
+octcdq_harm_score,6.503,1.77,4.948
+psc,6.301,3.599,3.683
+octcdq_incompleteness_score,4.639,1.076,3.515
+shaps_snaith,3.904,5.008,1.243
+bfas_neuroticism,2.577,1.053,2.152
+bfas_agreeableness,-0.493,1.531,-0.155
+bfas_openness_intellect,-0.516,1.424,-0.078
+bfas_conscientiousness,-1.31,1.476,-0.804
+bfas_extraversion,-1.798,1.789,-1.064

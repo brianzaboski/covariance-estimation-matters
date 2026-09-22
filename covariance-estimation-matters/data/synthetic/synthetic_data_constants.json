@@ -1,0 +1,383 @@
+{
+  "seed": 20260920,
+  "n": {
+    "HC": 62,
+    "OCD": 263
+  },
+  "targets": {
+    "HC": {
+      "gbdi_total_score": [
+        2.242,
+        3.012,
+        38.71
+      ],
+      "shaps_total_score_snaith": [
+        0.129,
+        0.665,
+        93.548
+      ],
+      "psc_total_score": [
+        25.758,
+        3.108,
+        29.032
+      ],
+      "docs_total": [
+        2.419,
+        4.448,
+        45.161
+      ],
+      "octcdq_incompleteness_score": [
+        15.21,
+        5.505,
+        22.581
+      ],
+      "octcdq_harm_score": [
+        13.71,
+        4.248,
+        30.645
+      ],
+      "bfas_domain_neuroticism": [
+        2.163,
+        0.582,
+        0.0
+      ],
+      "bfas_domain_extraversion": [
+        3.731,
+        0.419,
+        0.0
+      ],
+      "bfas_domain_conscientiousness": [
+        3.681,
+        0.417,
+        0.0
+      ],
+      "bfas_domain_agreeableness": [
+        4.06,
+        0.414,
+        0.0
+      ],
+      "bfas_domain_openness_intellect": [
+        3.844,
+        0.459,
+        0.0
+      ]
+    },
+    "OCD": {
+      "gbdi_total_score": [
+        16.574,
+        9.521,
+        2.281
+      ],
+      "shaps_total_score_snaith": [
+        0.949,
+        1.759,
+        61.597
+      ],
+      "psc_total_score": [
+        37.115,
+        7.967,
+        1.901
+      ],
+      "docs_total": [
+        28.452,
+        12.259,
+        0.0
+      ],
+      "octcdq_incompleteness_score": [
+        34.4,
+        7.935,
+        0.76
+      ],
+      "octcdq_harm_score": [
+        34.56,
+        8.008,
+        1.141
+      ],
+      "bfas_domain_neuroticism": [
+        3.405,
+        0.59,
+        0.0
+      ],
+      "bfas_domain_extraversion": [
+        3.289,
+        0.569,
+        0.0
+      ],
+      "bfas_domain_conscientiousness": [
+        3.349,
+        0.549,
+        0.0
+      ],
+      "bfas_domain_agreeableness": [
+        3.996,
+        0.463,
+        0.0
+      ],
+      "bfas_domain_openness_intellect": [
+        3.809,
+        0.442,
+        0.0
+      ]
+    }
+  },
+  "scale": {
+    "gbdi_total_score": [
+      0,
+      54,
+      1.0
+    ],
+    "shaps_total_score_snaith": [
+      0,
+      14,
+      1.0
+    ],
+    "psc_total_score": [
+      23,
+      92,
+      1.0
+    ],
+    "docs_total": [
+      0,
+      80,
+      1.0
+    ],
+    "octcdq_incompleteness_score": [
+      10,
+      50,
+      1.0
+    ],
+    "octcdq_harm_score": [
+      10,
+      50,
+      1.0
+    ],
+    "bfas_domain_neuroticism": [
+      1,
+      5,
+      0.05
+    ],
+    "bfas_domain_extraversion": [
+      1,
+      5,
+      0.05
+    ],
+    "bfas_domain_conscientiousness": [
+      1,
+      5,
+      0.05
+    ],
+    "bfas_domain_agreeableness": [
+      1,
+      5,
+      0.05
+    ],
+    "bfas_domain_openness_intellect": [
+      1,
+      5,
+      0.05
+    ]
+  },
+  "qles": {
+    "intercept": 59.7596,
+    "b_age": -0.0194,
+    "b_sex": {
+      "Female": 0.0,
+      "Male": -1.592,
+      "Other": 2.8208
+    },
+    "b_gbdi": -0.6124,
+    "b_docs": -0.0673,
+    "r2": 0.546,
+    "lo": 14,
+    "hi": 70
+  },
+  "age": {
+    "HC": {
+      "mean": 33.42,
+      "sd": 12.62,
+      "lo": 18,
+      "hi": 70,
+      "n_at_median": 3
+    },
+    "OCD": {
+      "mean": 30.68,
+      "sd": 11.33,
+      "lo": 18,
+      "hi": 70,
+      "n_at_median": 46
+    }
+  },
+  "age_median": 28,
+  "sex_p": {
+    "HC": {
+      "Female": 0.581,
+      "Male": 0.419,
+      "Other": 0.0
+    },
+    "OCD": {
+      "Female": 0.719,
+      "Male": 0.259,
+      "Other": 0.023
+    }
+  },
+  "n_missing_outcome": 7,
+  "n_sex_missing_in_real_data": 27,
+  "latent_R": [
+    [
+      1.0,
+      0.3316,
+      0.6067,
+      0.5087,
+      0.3841,
+      0.4406,
+      0.4919,
+      -0.2409,
+      -0.2715,
+      -0.2283,
+      -0.1529
+    ],
+    [
+      0.3316,
+      1.0,
+      0.2667,
+      -0.047,
+      -0.2068,
+      0.0225,
+      0.2951,
+      -0.7049,
+      -0.357,
+      -0.733,
+      -0.3843
+    ],
+    [
+      0.6067,
+      0.2667,
+      1.0,
+      0.5855,
+      0.5179,
+      0.4844,
+      0.427,
+      -0.308,
+      -0.4182,
+      -0.2656,
+      -0.1905
+    ],
+    [
+      0.5087,
+      -0.047,
+      0.5855,
+      1.0,
+      0.712,
+      0.6994,
+      0.4248,
+      -0.2057,
+      -0.1893,
+      -0.272,
+      -0.0489
+    ],
+    [
+      0.3841,
+      -0.2068,
+      0.5179,
+      0.712,
+      1.0,
+      0.8427,
+      0.4736,
+      -0.2043,
+      -0.1186,
+      -0.2272,
+      -0.2577
+    ],
+    [
+      0.4406,
+      0.0225,
+      0.4844,
+      0.6994,
+      0.8427,
+      1.0,
+      0.4778,
+      -0.2457,
+      -0.1575,
+      -0.2453,
+      -0.2072
+    ],
+    [
+      0.4919,
+      0.2951,
+      0.427,
+      0.4248,
+      0.4736,
+      0.4778,
+      1.0,
+      -0.3088,
+      -0.3971,
+      -0.5613,
+      -0.4641
+    ],
+    [
+      -0.2409,
+      -0.7049,
+      -0.308,
+      -0.2057,
+      -0.2043,
+      -0.2457,
+      -0.3088,
+      1.0,
+      0.4045,
+      0.5707,
+      0.5136
+    ],
+    [
+      -0.2715,
+      -0.357,
+      -0.4182,
+      -0.1893,
+      -0.1186,
+      -0.1575,
+      -0.3971,
+      0.4045,
+      1.0,
+      0.3136,
+      0.2631
+    ],
+    [
+      -0.2283,
+      -0.733,
+      -0.2656,
+      -0.272,
+      -0.2272,
+      -0.2453,
+      -0.5613,
+      0.5707,
+      0.3136,
+      1.0,
+      0.5257
+    ],
+    [
+      -0.1529,
+      -0.3843,
+      -0.1905,
+      -0.0489,
+      -0.2577,
+      -0.2072,
+      -0.4641,
+      0.5136,
+      0.2631,
+      0.5257,
+      1.0
+    ]
+  ],
+  "features": [
+    "gbdi_total_score",
+    "shaps_total_score_snaith",
+    "psc_total_score",
+    "docs_total",
+    "octcdq_incompleteness_score",
+    "octcdq_harm_score",
+    "bfas_domain_neuroticism",
+    "bfas_domain_extraversion",
+    "bfas_domain_conscientiousness",
+    "bfas_domain_agreeableness",
+    "bfas_domain_openness_intellect"
+  ]
+}

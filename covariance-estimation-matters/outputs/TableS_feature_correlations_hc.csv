@@ -1,0 +1,12 @@
+,gbdi_total_score,shaps_total_score_snaith,psc_total_score,docs_total,octcdq_incompleteness_score,octcdq_harm_score,bfas_domain_neuroticism,bfas_domain_extraversion,bfas_domain_conscientiousness,bfas_domain_agreeableness,bfas_domain_openness_intellect
+gbdi_total_score,1.0,0.172,0.56,0.456,0.361,0.393,0.445,-0.217,-0.249,-0.204,-0.142
+shaps_total_score_snaith,0.172,1.0,0.134,-0.024,-0.097,0.019,0.133,-0.333,-0.163,-0.353,-0.175
+psc_total_score,0.56,0.134,1.0,0.537,0.503,0.445,0.4,-0.288,-0.395,-0.247,-0.182
+docs_total,0.456,-0.024,0.537,1.0,0.658,0.66,0.371,-0.19,-0.169,-0.253,-0.045
+octcdq_incompleteness_score,0.361,-0.097,0.503,0.658,1.0,0.857,0.454,-0.216,-0.116,-0.248,-0.25
+octcdq_harm_score,0.393,0.019,0.445,0.66,0.857,1.0,0.448,-0.225,-0.151,-0.221,-0.198
+bfas_domain_neuroticism,0.445,0.133,0.4,0.371,0.454,0.448,1.0,-0.312,-0.397,-0.57,-0.464
+bfas_domain_extraversion,-0.217,-0.333,-0.288,-0.19,-0.216,-0.225,-0.312,1.0,0.407,0.566,0.517
+bfas_domain_conscientiousness,-0.249,-0.163,-0.395,-0.169,-0.116,-0.151,-0.397,0.407,1.0,0.318,0.263
+bfas_domain_agreeableness,-0.204,-0.353,-0.247,-0.253,-0.248,-0.221,-0.57,0.566,0.318,1.0,0.533
+bfas_domain_openness_intellect,-0.142,-0.175,-0.182,-0.045,-0.25,-0.198,-0.464,0.517,0.263,0.533,1.0

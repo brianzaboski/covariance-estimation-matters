@@ -1,0 +1,8 @@
+Measure,N,Mdn (IQR),Range,Alpha,N/A (%)
+OCTCDQ Harm Avoidance,300,32.00 (18.00),10.00 - 50.00,0.96,7.69
+OCTCDQ Incompleteness,300,33.00 (16.00),10.00 - 50.00,0.96,7.69
+BFAS Neuroticism,297,3.25 (1.15),1.20 - 4.85,0.94,8.62
+BFAS Extraversion,297,3.45 (0.75),1.45 - 4.95,0.89,8.62
+BFAS Conscientiousness,297,3.45 (0.80),1.90 - 4.90,0.85,8.62
+BFAS Agreeableness,297,4.05 (0.60),2.20 - 5.00,0.86,8.62
+BFAS Openness/Intellect,297,3.85 (0.60),2.00 - 5.00,0.80,8.62
