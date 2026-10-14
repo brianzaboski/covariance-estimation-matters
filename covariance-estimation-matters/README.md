@@ -1,12 +1,14 @@
 # Covariance Estimation Matters for Multidimensional Normative Modeling
 
-Code and summary outputs for *Covariance Estimation Matters for Multidimensional
-Normative Modeling: A Demonstration with Obsessive–Compulsive Disorder*.
+Code, summary outputs, and supplementary materials for *Covariance Estimation
+Matters for Multidimensional Normative Modeling: A Demonstration with
+Obsessive–Compulsive Disorder*.
 
 `MANIFEST.md` maps every table and figure in the manuscript and supplement to the
-script and output file that produced it.
+script and output file that produced it. The supplementary materials themselves
+(Supplements S1–S8) are in `docs/supplementary_materials.pdf`.
 
-DOI: https://doi.org/10.5281/zenodo.22878836
+DOI: https://doi.org/10.5281/zenodo.22878835 (all versions; resolves to the latest)
 
 Licence: the code under `code/` and `data/synthetic/` is MIT (see LICENSE); the written
 materials and summary outputs are CC BY 4.0 (see LICENSE-DOCS). The registry data are
@@ -44,7 +46,7 @@ The reported Study 2 values are in `outputs/`.
 ```
 code/      analysis scripts, numbered in run order
 data/      synthetic dataset and its generator; registry files go here if you have them
-docs/      preregistration amendments
+docs/      supplementary materials (PDF) and an analysis log of post hoc additions
 outputs/   summary tables and figures (also where scripts write)
 env/       environment pins
 ```
