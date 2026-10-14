@@ -3,6 +3,25 @@
 Revisions to the analysis scripts, kept here rather than in the module
 docstrings. Entries affecting reported values are marked.
 
+## Archive releases
+
+### v1.1.0 (2026-10-14)
+
+- Added `docs/supplementary_materials.pdf`, the manuscript's Supplements S1–S8.
+- Corrected wording that described `docs/` as holding preregistration amendments.
+  Study 1's design document was not time-stamped or publicly registered and is not
+  part of the archive, so no analysis is described as preregistered. README.md and
+  MANIFEST.md now describe `docs/study1_amendment_2026-09-17.md` as an analysis log,
+  and a dated note at the top of that file explains this; its original text is
+  unchanged.
+- Comments in 05_study1_simulation.py point to that file instead of the unarchived
+  design document. No code, output, or reported value changed.
+- README gives the concept DOI, which resolves to the latest version.
+
+### v1.0.0 (2026-09-21)
+
+- Initial archive.
+
 ## 01_clean_and_score.py
 
 - **Affects reported values.** Q-LES-Q-SF is scored over items 1-14 (range
