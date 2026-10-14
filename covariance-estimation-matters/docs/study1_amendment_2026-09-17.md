@@ -1,3 +1,10 @@
+> **Note added 2026-10-14 (archive v1.1.0).** This entry was written for an internal
+> design log, `study1_design_and_predictions.md`, that was not time-stamped or
+> publicly registered and is not part of this archive. The study is therefore not
+> described as preregistered. The entry is kept below, unchanged, as the record of a
+> post hoc addition. The other post hoc additions to Study 1 are listed in
+> `CHANGELOG.md` (`05_study1_simulation.py`, v1.3 and v1.4).
+
 # Amendment log entry — paste into `study1_design_and_predictions.md`
 
 ## Amendment 2, 17 September 2026. Reference-group calibration added post hoc.
