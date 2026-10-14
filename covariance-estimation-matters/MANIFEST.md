@@ -21,6 +21,8 @@ worth re-checking after any re-run, because nothing enforces the correspondence.
 
 ## Supplement
 
+The supplement itself is `docs/supplementary_materials.pdf`.
+
 | Exhibit | Script | Output file | Notes |
 |---|---|---|---|
 | S1. Matched-floor conditions | `05_study1_simulation.py`, `04_invert_r.py` | `Study1_summary.csv`, `latent_R.csv` | conditions `floor_matched`, `floor_matched_corr` |
@@ -60,13 +62,18 @@ worth re-checking after any re-run, because nothing enforces the correspondence.
 | `Study1_summary_v14.csv` | `05_study1_simulation.py` (pre-v1.6) | superseded; no oracle or uncontaminated-subset columns, and its values contradict Table S1 |
 | `data/final_df.csv`, `data/imputed_clinical_data.csv` | `01` | registry data |
 
-## Preregistration
+## Analysis log
+
+Study 1's design was drafted before the simulation was run, but that document was not
+time-stamped or publicly registered and is not part of this archive, so no analysis is
+described as preregistered.
 
 `docs/study1_amendment_2026-09-17.md` records the post hoc addition of the
 reference-group calibration outcomes (`ref_med_ratio`, `ref_pct_above_q95`,
-`ref_pct_above_q975`), including the prediction made before the full run. Study 1's
-existing outcomes and random-number streams were unchanged, so all previously reported
-values reproduce.
+`ref_pct_above_q975`), including the prediction made before the full run. The
+matched-floor conditions were also added post hoc; see `CHANGELOG.md`
+(`05_study1_simulation.py`, v1.3 and v1.4). Study 1's existing outcomes and
+random-number streams were unchanged, so all previously reported values reproduce.
 
 ## Synthetic data
 
