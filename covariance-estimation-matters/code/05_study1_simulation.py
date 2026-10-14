@@ -28,7 +28,7 @@ This script reads no participant data. The matched conditions use aggregates
 recorded below: floor prevalences observed in the Study 2 control sample, and a
 latent correlation matrix derived in 04_invert_r.py.
 
-Design, predictions and amendments: docs/study1_amendment_2026-09-17.md.
+Post hoc additions: docs/study1_amendment_2026-09-17.md and CHANGELOG.md.
 
 Writes  Study1_runs.csv, Study1_summary.csv, Study1_calibration.csv,
         Fig_study1, FigS_study1_ranking, FigS_study1_error_by_N,
@@ -299,8 +299,8 @@ def run_cell(cond_name, seed):
             dd = d2(dev, center, Pm)
             top = dd >= np.quantile(dd, TOP_Q)
             # In-sample calibration of the REFERENCE group, the Study 1 analogue of
-            # the healthy-control distances in Study 2. Added post hoc; see the
-            # amendment log in study1_design_and_predictions.md.
+            # the healthy-control distances in Study 2. Added post hoc; see
+            # docs/study1_amendment_2026-09-17.md.
             d_ref = d2(X, center, Pm)
             row.update({
                 f'{e}_failed': False,
@@ -417,8 +417,8 @@ print(summary[['condition', 'n'] + [f'{e}_d2_relerr_med_median' for e in ESTIMAT
 # not against the nominal 5% and 2.5%, or the estimator's own small-sample
 # behavior gets attributed to the data.
 #
-# Added post hoc, after the Study 2 chi-square table raised the question. See the
-# amendment log in study1_design_and_predictions.md.
+# Added post hoc, after the Study 2 chi-square table raised the question. See
+# docs/study1_amendment_2026-09-17.md.
 # ------------------------------------------------------------------
 # Report the ratio as a MEDIAN across seeds. A near-singular fit pseudo-inverts to
 # enormous distances, and one such seed drags a mean into the thousands while the
