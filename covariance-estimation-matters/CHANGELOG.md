@@ -5,6 +5,33 @@ docstrings. Entries affecting reported values are marked.
 
 ## Archive releases
 
+### v1.2.0 (2026-10-16)
+
+- `outputs/` now holds the files from the run reported in the paper. Earlier
+  versions carried outputs from a later check run of the same code, seeds and
+  pinned package versions (numpy 1.26.4, scipy 1.13.1, scikit-learn 1.8.0). The two
+  runs agree to floating-point precision except for MCD fits that are rank-deficient
+  or nearly so (the .75-floor Study 1 cells, a few .50-floor cells at n = 5,000, and
+  raw condition numbers of singular fits in the support-fraction sweep); Spearman
+  values in the jitter-check runs (SimS_jitter_runs.csv), whose summary table is
+  unchanged; one distinct-value count in TableS_feature_descriptives_by_group.csv;
+  and the figure files. README now states this exception instead of saying Study 1
+  reproduces exactly.
+- `07_support_fraction_sweep.py` records only the data file's name in
+  `support_fraction_sweep_provenance.json`, not its local path; the archived
+  provenance file is redacted the same way. No result changes.
+- Figure 1 is now drawn by the new `code/05b_figure1.py` from
+  `outputs/Study1_runs.csv`, without re-running the simulation: across-seed median
+  lines with interquartile bands in Panels A-D (A and D previously plotted means),
+  interquartile whiskers in Panel F, and labelled log ticks in Panel A. Panel C's
+  axis is capped at 3,000, with an arrow marking the one band (MCD, .75 floor,
+  N = 5,000) that extends past it. Every plotted value is written to
+  `outputs/Fig_study1_data.csv` (statistic 'median' with quartiles, or
+  'percent_singular' for Panel E). No reported value changed.
+- MANIFEST: Table 2 and Table 3 source notes corrected; the in-sample reliability
+  row relabelled.
+- `docs/supplementary_materials.pdf` updated to the submitted supplement.
+
 ### v1.1.0 (2026-10-14)
 
 - Added `docs/supplementary_materials.pdf`, the manuscript's Supplements S1–S8.
@@ -134,6 +161,12 @@ docstrings. Entries affecting reported values are marked.
   because the two coincide under several conditions.
 - Panel legends and axis limits fixed; save() reports a failed overwrite instead
   of silently writing a timestamped file.
+
+## 05b_figure1.py
+
+- New in archive v1.2.0. Redraws Figure 1 from the archived per-seed results so
+  that the figure shows across-seed variability; run it after `05`, whose own
+  version of Fig_study1 it overwrites.
 
 ## 06_bootstrap_sample_size.py
 

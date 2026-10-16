@@ -23,7 +23,7 @@ fi
 PY=$(command -v python3 || command -v python)
 
 # Show which interpreter is actually being used, so a wrong environment is
-# visible before eight scripts run against it.
+# visible before the analysis scripts run against it.
 "$PY" -c "import sys; print('python', sys.version.split()[0]); print('from   ', sys.executable)"
 
 "$PY" - <<'EOF' || echo "
@@ -62,6 +62,7 @@ fi
 run 03_phase2_analyses.py "${DATA[@]}"
 run 04_invert_r.py
 run 05_study1_simulation.py
+run 05b_figure1.py
 run 06_bootstrap_sample_size.py "${DATA[@]}"
 run 07_support_fraction_sweep.py "${DATA[@]}"
 run 08_fig_mcd_discarded.py

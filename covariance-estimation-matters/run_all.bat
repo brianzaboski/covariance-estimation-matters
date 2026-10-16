@@ -36,7 +36,7 @@ REM conda environments ship "python" but not the "py" launcher, so prefer python
 where python >nul 2>nul && (set PY=python) || (set PY=py)
 
 REM Show which interpreter is actually being used, so a wrong environment is
-REM visible before eight scripts run against it.
+REM visible before the analysis scripts run against it.
 %PY% -c "import sys; print('python', sys.version.split()[0]); print('from   ', sys.executable)"
 
 %PY% -c "import sklearn, sys; v = sklearn.__version__; print('scikit-learn', v); sys.exit(0 if v == '1.8.0' else 1)"
@@ -71,6 +71,8 @@ if errorlevel 1 goto :aborted
 call :run 04_invert_r.py
 if errorlevel 1 goto :aborted
 call :run 05_study1_simulation.py
+if errorlevel 1 goto :aborted
+call :run 05b_figure1.py
 if errorlevel 1 goto :aborted
 call :run 06_bootstrap_sample_size.py %DATA%
 if errorlevel 1 goto :aborted

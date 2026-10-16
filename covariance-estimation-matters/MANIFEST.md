@@ -11,12 +11,12 @@ worth re-checking after any re-run, because nothing enforces the correspondence.
 | Exhibit | Script | Output file | Notes |
 |---|---|---|---|
 | Table 1. Simulation conditions | `05_study1_simulation.py` | — | design table, written from `CONDITIONS` in the script |
-| Table 2. Sample statistics | `03_phase2_analyses.py` | `TableS_feature_descriptives_by_group.csv` | manual |
-| Table 3. Study measure descriptives | `03_phase2_analyses.py`, `02_descriptives_octcdq_bfas.py` | `TableS_feature_descriptives_by_group.csv`, `Table3_additional_rows.csv` | manual; the seven OCTCDQ and BFAS rows come from `02`, the floor-prevalence column from the by-group file |
+| Table 2. Sample statistics | — | — | built separately from the registry demographics export and not reproduced by the archived scripts; `03` checks its sex counts against the analysis file |
+| Table 3. Study measure descriptives | `03_phase2_analyses.py`, `02_descriptives_octcdq_bfas.py` | `TableS_feature_descriptives_by_group.csv`, `Table3_additional_rows.csv` | manual; the seven OCTCDQ and BFAS rows come from `02`, the floor-prevalence column from the by-group file. The characterizing-measure rows (BDI-II total, aBDI, Q-LES-Q-SF, DOCS subscales, STAI, OCTCDQ total) were computed from the registry data and are not in `outputs/` |
 | Table 4. Calibration against the Study 1 conditions | `05_study1_simulation.py` | `Study1_calibration.csv`, `Study1_summary.csv` | manual; reference sample *n* = 62 |
 | Table 5a. Regression coefficients | `03_phase2_analyses.py` | `Table4a_coefficients.csv` | |
 | Table 5b. Step statistics | `03_phase2_analyses.py` | `Table4b_step_statistics.csv` | |
-| Figure 1. Estimator behavior under known conditions | `05_study1_simulation.py` | figure PDF/PNG | |
+| Figure 1. Estimator behavior under known conditions | `05b_figure1.py`, from the outputs of `05_study1_simulation.py` | `Fig_study1.pdf` / `.png`; plotted values in `Fig_study1_data.csv` | across-seed median lines with interquartile bands (30 seeds) |
 | Figure 2. What MCD discarded | `08_fig_mcd_discarded.py` | `Fig_mcd_discarded.pdf` / `.png` | drawn from `TableS_mcd_support_composition.csv`, written by `03` |
 
 ## Supplement
@@ -32,7 +32,7 @@ The supplement itself is `docs/supplementary_materials.pdf`.
 | S4. Instrument psychometrics | — | — | published sources only; no output file |
 | S5 / Tables S2–S3 / Figure S2. Support-fraction sweep | `07_support_fraction_sweep.py` | `TableS_support_fraction_sweep_summary.csv`, `TableS_support_fraction_sweep_byseed.csv`, `FigS_support_fraction_sweep.pdf` | 10 fractions × 30 seeds = 300 fits |
 | S5. Seed sensitivity of the reported MCD fit | `07_support_fraction_sweep.py` | `TableS_support_fraction_seed_lookup.csv` | default MCD refitted over 500 seeds |
-| S4. Instrument reliability in this sample | `02b_feature_reliability.py` | `TableS_feature_reliability.csv`, `TableS_feature_reliability_bfas_aspects.csv` | re-run after the OCTCDQ metric fix; the two subscale medians now agree with Table 3 |
+| Table 3, α column (reliability in this sample; Supplement S4 cites published values) | `02b_feature_reliability.py` | `TableS_feature_reliability.csv`, `TableS_feature_reliability_bfas_aspects.csv` | re-run after the OCTCDQ metric fix; the two subscale medians now agree with Table 3 |
 | S6 / Table S4 / Figure S3. Reference sample size | `06_bootstrap_sample_size.py` | `Table3_simulation_summary.csv`, `Sim2_runs.csv` | jitter check in `TableS_jitter_sensitivity.csv` |
 | S7 / Figure S4. Deviation score distributions | `03_phase2_analyses.py` | figure PDF/PNG | |
 | S8 / Table S5. Directional profiling | `03_phase2_analyses.py` | `Table5_deviation_profile.csv` | top decile, *D*² = 185.65, *n* = 27 |

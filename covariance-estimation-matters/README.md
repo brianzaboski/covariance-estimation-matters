@@ -33,8 +33,18 @@ export and cannot run against it.
 
 Two consequences worth stating plainly.
 
-**Study 1 reproduces exactly.** `05_study1_simulation.py` reads no participant data. At
-the seeds recorded below it returns the reported values.
+**Study 1 reproduces, with one documented exception.** `05_study1_simulation.py` reads
+no participant data, and at the seeds recorded below it returns the reported values
+except where an MCD fit is rank-deficient or nearly so: chiefly the .75-floor
+condition, a few .50-floor cells at n = 5,000, and the singular fits in the
+support-fraction sweep (`07`). For those fits, whether a near-zero eigenvalue falls
+above or below the pseudoinverse cutoff turns on floating-point details of the machine
+and linear-algebra library, so values such as the .75-floor MCD median ratio and
+singular-fit rate can differ between runs even with the same code, seeds and pinned
+package versions. The
+manuscript flags these values as unstable, and `check_reproduction.py` tests the
+.75-floor singular-fit rate as a range for this reason. Everything in `outputs/` comes
+from the run reported in the paper.
 
 **Study 2 does not.** Scripts `01`, `02`, `03`, `06`, and `07` require the registry data.
 Run against the synthetic dataset they execute end to end and produce output of the right
@@ -107,6 +117,7 @@ order matters.
 | 03 | `03_phase2_analyses.py` | `data/imputed_clinical_data.csv` | Study 2 tables and figures |
 | 04 | `04_invert_r.py` | `outputs/TableS_feature_correlations_hc.csv` | `outputs/latent_R.csv` |
 | 05 | `05_study1_simulation.py` | nothing | Study 1 tables and figures |
+| 05b | `05b_figure1.py` | `outputs/Study1_runs.csv`, `outputs/Study1_summary.csv` | Figure 1 with across-seed interquartile bands (replaces 05's version) |
 | 06 | `06_bootstrap_sample_size.py` | `data/imputed_clinical_data.csv` | Supplement S6 |
 | 07 | `07_support_fraction_sweep.py` | `data/imputed_clinical_data.csv` | Supplement S5 |
 | 08 | `08_fig_mcd_discarded.py` | `outputs/TableS_mcd_support_composition.csv` | Figure 2 |
@@ -129,6 +140,7 @@ python code/02b_feature_reliability.py
 python code/03_phase2_analyses.py
 python code/04_invert_r.py
 python code/05_study1_simulation.py
+python code/05b_figure1.py
 python code/06_bootstrap_sample_size.py
 python code/07_support_fraction_sweep.py
 python code/08_fig_mcd_discarded.py
@@ -165,7 +177,7 @@ After a full pass over the real data:
 python code/check_reproduction.py
 ```
 
-It compares nine reported quantities against what is now in `outputs/` — the
+It compares ten reported quantities against what is now in `outputs/` — the
 Study 1 calibration and singular-fit rates, the real-sample MCD fit, the partial
 correlation and its interval, and the sweep's singular-fit count. Every script can
 finish without error and still produce the wrong numbers, so a clean run of the
