@@ -11,7 +11,7 @@ HC,bfas_domain_conscientiousness,62,3.681,0.417,3.725,0.55,2.35,1,0.0,26
 HC,bfas_domain_agreeableness,62,4.06,0.414,4.125,0.638,2.95,1,0.0,30
 HC,bfas_domain_openness_intellect,62,3.844,0.459,3.875,0.588,2.85,1,0.0,34
 OCD,gbdi_total_score,263,16.574,9.521,15.0,13.0,0.0,0,2.281,43
-OCD,shaps_total_score_snaith,263,0.949,1.759,0.0,1.0,0.0,0,61.597,15
+OCD,shaps_total_score_snaith,263,0.949,1.759,0.0,1.0,0.0,0,61.597,14
 OCD,psc_total_score,263,37.115,7.967,36.0,12.0,23.0,23,1.901,57
 OCD,docs_total,263,28.452,12.259,27.0,17.0,2.0,0,0.0,61
 OCD,octcdq_incompleteness_score,263,34.4,7.935,35.0,8.655,10.0,10,0.76,56

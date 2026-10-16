@@ -1,13 +1,13 @@
 {
-  "run_utc": "2026-09-21T20:55:22Z",
-  "runtime_sec": 123.1,
+  "run_utc": "2026-09-19T16:52:00Z",
+  "runtime_sec": 201.3,
   "python": "3.11.8",
   "numpy": "1.26.4",
   "scipy": "1.13.1",
   "sklearn": "1.8.0",
-  "pandas": "3.0.6",
-  "matplotlib": "3.11.2",
-  "data_file": "C:\\Users\\baz8\\Desktop\\smoketest\\covariance-estimation-matters\\data\\imputed_clinical_data.csv",
+  "pandas": "2.2.2",
+  "matplotlib": "3.9.2",
+  "data_file": "imputed_clinical_data.csv",
   "n_hc": 62,
   "n_ocd": 263,
   "seeds": [
