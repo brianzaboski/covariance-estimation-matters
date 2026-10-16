@@ -745,7 +745,7 @@ def main() -> None:
         "numpy": np.__version__, "scipy": scipy.__version__,
         "sklearn": sklearn.__version__, "pandas": pd.__version__,
         "matplotlib": matplotlib.__version__,
-        "data_file": str(args.data), "n_hc": int(len(hc)), "n_ocd": int(len(ocd)),
+        "data_file": args.data.name, "n_hc": int(len(hc)), "n_ocd": int(len(ocd)),
         "seeds": seeds, "support_fractions": SUPPORT_FRACTIONS,
         "benchmark_n": BENCH_N, "large_n": LARGE_N, "jitter_frac": JITTER,
         "benchmark_source": "real HC sample (independent of the reference sample)",
