@@ -63,6 +63,7 @@ run 03_phase2_analyses.py "${DATA[@]}"
 run 04_invert_r.py
 run 05_study1_simulation.py
 run 05b_figure1.py
+run 05c_calibration_ranges.py
 run 06_bootstrap_sample_size.py "${DATA[@]}"
 run 07_support_fraction_sweep.py "${DATA[@]}"
 run 08_fig_mcd_discarded.py

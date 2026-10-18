@@ -74,6 +74,8 @@ call :run 05_study1_simulation.py
 if errorlevel 1 goto :aborted
 call :run 05b_figure1.py
 if errorlevel 1 goto :aborted
+call :run 05c_calibration_ranges.py
+if errorlevel 1 goto :aborted
 call :run 06_bootstrap_sample_size.py %DATA%
 if errorlevel 1 goto :aborted
 call :run 07_support_fraction_sweep.py %DATA%

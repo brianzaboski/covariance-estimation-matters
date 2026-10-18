@@ -13,10 +13,10 @@ worth re-checking after any re-run, because nothing enforces the correspondence.
 | Table 1. Simulation conditions | `05_study1_simulation.py` | — | design table, written from `CONDITIONS` in the script |
 | Table 2. Sample statistics | — | — | built separately from the registry demographics export and not reproduced by the archived scripts; `03` checks its sex counts against the analysis file |
 | Table 3. Study measure descriptives | `03_phase2_analyses.py`, `02_descriptives_octcdq_bfas.py` | `TableS_feature_descriptives_by_group.csv`, `Table3_additional_rows.csv` | manual; the seven OCTCDQ and BFAS rows come from `02`, the floor-prevalence column from the by-group file. The characterizing-measure rows (BDI-II total, aBDI, Q-LES-Q-SF, DOCS subscales, STAI, OCTCDQ total) were computed from the registry data and are not in `outputs/` |
-| Table 4. Calibration against the Study 1 conditions | `05_study1_simulation.py` | `Study1_calibration.csv`, `Study1_summary.csv` | manual; reference sample *n* = 62 |
+| Table 4. Calibration against the Study 1 conditions | `05_study1_simulation.py`, `03_phase2_analyses.py`, `05c_calibration_ranges.py` | `Study1_calibration.csv`, `Study1_summary.csv`, `TableS_chi2_calibration.csv`, `TableS_calibration_ranges.csv` | manual; reference sample *N* = 62. The observed column is from `TableS_chi2_calibration.csv` (HC-mean rows). The text's counts of observed quantities inside each condition's 2.5th–97.5th percentile range across seeds come from `TableS_calibration_ranges.csv` |
 | Table 5a. Regression coefficients | `03_phase2_analyses.py` | `Table4a_coefficients.csv` | |
 | Table 5b. Step statistics | `03_phase2_analyses.py` | `Table4b_step_statistics.csv` | |
-| Figure 1. Estimator behavior under known conditions | `05b_figure1.py`, from the outputs of `05_study1_simulation.py` | `Fig_study1.pdf` / `.png`; plotted values in `Fig_study1_data.csv` | across-seed median lines with interquartile bands (30 seeds) |
+| Figure 1. Estimator behavior under known conditions | `05b_figure1.py`, from the outputs of `05_study1_simulation.py` | `Fig_study1.pdf` / `.png`; plotted values in `Fig_study1_data.csv` | drawn from `Study1_runs.csv` and `Study1_summary.csv`; across-seed median lines with interquartile bands (30 seeds) |
 | Figure 2. What MCD discarded | `08_fig_mcd_discarded.py` | `Fig_mcd_discarded.pdf` / `.png` | drawn from `TableS_mcd_support_composition.csv`, written by `03` |
 
 ## Supplement
@@ -25,16 +25,16 @@ The supplement itself is `docs/supplementary_materials.pdf`.
 
 | Exhibit | Script | Output file | Notes |
 |---|---|---|---|
-| S1. Matched-floor conditions | `05_study1_simulation.py`, `04_invert_r.py` | `Study1_summary.csv`, `latent_R.csv` | conditions `floor_matched`, `floor_matched_corr` |
-| Table S1. Calibration by condition | `05_study1_simulation.py` | `Study1_summary.csv` | manual; reference sample *n* = 5,000. Across-seed **median** for the ratio, across-seed **mean** for the percentage; contamination rows also use `*_ref_pct_above_q95_clean_mean` |
-| S2 / Figure S1. Ordering of the deviant group | `05_study1_simulation.py` | `Study1_summary.csv`, figure PDF/PNG | |
+| S1. Matched-floor conditions | `05_study1_simulation.py`, `04_invert_r.py`, `05c_calibration_ranges.py` | `Study1_summary.csv`, `latent_R.csv`, `TableS_calibration_ranges.csv` | conditions `floor_matched`, `floor_matched_corr`; the across-seed range counts come from `TableS_calibration_ranges.csv` |
+| Table S1. Calibration by condition | `05_study1_simulation.py` | `Study1_summary.csv` | manual; reference sample *n* = 5,000. Across-seed **median** for the ratio, across-seed **mean** for the percentage; contamination rows also use `*_ref_pct_above_q95_clean_mean`. `Study1_summary.csv` gives across-seed SDs and medians for every reported outcome. Four auxiliary MCD outcomes (`mcd_support`, `mcd_own_center_dev_med`, `mcd_pct_floor_retained`, `mcd_pct_floor_excluded`) are summarized by their mean only; their per-seed values are in `Study1_runs.csv` |
+| S2 / Figure S1. Ordering of the deviant group | `05_study1_simulation.py` | `Study1_summary.csv`, `FigS_study1_ranking.pdf` / `.png` | |
 | S3. Calibration narrative | `05_study1_simulation.py` | `Study1_calibration.csv` | |
 | S4. Instrument psychometrics | — | — | published sources only; no output file |
-| S5 / Tables S2–S3 / Figure S2. Support-fraction sweep | `07_support_fraction_sweep.py` | `TableS_support_fraction_sweep_summary.csv`, `TableS_support_fraction_sweep_byseed.csv`, `FigS_support_fraction_sweep.pdf` | 10 fractions × 30 seeds = 300 fits |
+| S5 / Tables S2–S3 / Figure S2. Support-fraction sweep | `07_support_fraction_sweep.py` | `TableS_support_fraction_sweep_summary.csv`, `TableS_support_fraction_sweep_byseed.csv`, `FigS_support_fraction_sweep.pdf` / `.png` | 10 fractions × 30 seeds = 300 fits |
 | S5. Seed sensitivity of the reported MCD fit | `07_support_fraction_sweep.py` | `TableS_support_fraction_seed_lookup.csv` | default MCD refitted over 500 seeds |
 | Table 3, α column (reliability in this sample; Supplement S4 cites published values) | `02b_feature_reliability.py` | `TableS_feature_reliability.csv`, `TableS_feature_reliability_bfas_aspects.csv` | re-run after the OCTCDQ metric fix; the two subscale medians now agree with Table 3 |
-| S6 / Table S4 / Figure S3. Reference sample size | `06_bootstrap_sample_size.py` | `Table3_simulation_summary.csv`, `Sim2_runs.csv` | jitter check in `TableS_jitter_sensitivity.csv` |
-| S7 / Figure S4. Deviation score distributions | `03_phase2_analyses.py` | figure PDF/PNG | |
+| S6 / Table S4 / Figure S3. Reference sample size | `06_bootstrap_sample_size.py` | `Table3_simulation_summary.csv`, `Sim2_runs.csv`, `Fig_sim2_estimator_behavior.pdf` / `.png` | jitter check in `TableS_jitter_sensitivity.csv` |
+| S7 / Figure S4. Deviation score distributions | `03_phase2_analyses.py` | `Fig_deviation_distributions.pdf` / `.png` | |
 | S8 / Table S5. Directional profiling | `03_phase2_analyses.py` | `Table5_deviation_profile.csv` | top decile, *D*² = 185.65, *n* = 27 |
 
 ## Reported in text but not in a table
@@ -47,9 +47,28 @@ The supplement itself is `docs/supplementary_materials.pdf`.
 | Condition numbers, retained support, median distances | `03_phase2_analyses.py` | `TableS_estimator_comparison_realdata.csv` |
 | Chi-square calibration of control distances | `03_phase2_analyses.py` | `TableS_chi2_calibration.csv` |
 | MCD location vs. scatter decomposition | `03_phase2_analyses.py` | `TableS_mcd_location_shift.csv` |
-| Step 3 influence diagnostics | `03_phase2_analyses.py` | `TableS_step3_influence.csv`, `TableS_step3_top_leverage.csv` |
+| Step 3 influence diagnostics | `03_phase2_analyses.py` | `TableS_step3_influence.csv` (the per-case leverage table that `03` also writes is not released; see Not for release) |
 | BFAS reverse-key check | `02_descriptives_octcdq_bfas.py` | `BFAS_item_diagnostics.csv` |
 | Package versions | `03`, `05`, `06`, `07` | `versions_*.json`, `support_fraction_sweep_provenance.json` |
+
+## Figures in `outputs/` that the paper does not show
+
+| File | Script | What it shows |
+|---|---|---|
+| `FigS_study1_error_by_N.pdf` / `.png` | `05_study1_simulation.py` | relative covariance error by reference sample size, one panel per condition |
+| `FigS_seed_convergence.pdf` / `.png` | `06_bootstrap_sample_size.py` | running mean of MCD's Frobenius error at *N* = 1,000 as seeds accumulate (±1 SE band), a seed-count stability check; Supplement S6 cites it by file name |
+| `FigS_zscore_profile.pdf` / `.png` | `03_phase2_analyses.py` | z-score profile of the top-decile OCD subgroup, with the all-OCD means; Table S5 reports the top-decile means |
+
+## Supporting files in `outputs/`
+
+| File | Script | What it is |
+|---|---|---|
+| `TableS_feature_correlations_hc.csv` | `03_phase2_analyses.py` | observed feature correlations in the controls; the input `04` inverts to `latent_R.csv` |
+| `TableS_feature_correlations_full.csv` | `03_phase2_analyses.py` | observed feature correlations in the full sample |
+| `TableS_feature_correlation_pairs_hc.csv` | `03_phase2_analyses.py` | control-sample feature pairs ranked by correlation |
+| `TableS_mcd_warnings.csv` | `03_phase2_analyses.py` | warnings scikit-learn raised during the Study 2 MCD fits, with counts |
+| `latent_R.npy` | `04_invert_r.py` | the matrix in `latent_R.csv`, in NumPy format |
+| `SimS_jitter_runs.csv` | `06_bootstrap_sample_size.py` | per-seed runs behind `TableS_jitter_sensitivity.csv` |
 
 ## Not for release
 

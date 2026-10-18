@@ -5,6 +5,38 @@ docstrings. Entries affecting reported values are marked.
 
 ## Archive releases
 
+### v1.3.0 (2026-10-18)
+
+- New `code/05c_calibration_ranges.py`, which writes
+  `outputs/TableS_calibration_ranges.csv`. The manuscript (Calibration Against the
+  Study 1 Conditions) and Supplement S1 count how many of the six observed calibration
+  quantities fall inside each condition's 2.5th-97.5th percentile range across seeds
+  at N = 62. No archived script computed those counts before. They use numpy's
+  default percentile rule (linear interpolation, endpoints included), which the
+  manuscript now states, and they reproduce the reported values: matched floors and
+  uniform .50 floor 6 of 6, Gaussian and .10 floor 0 of 6, .25 floor 1 of 6,
+  matched floors with matched correlations 2 of 6. No reported value changed.
+- `docs/supplementary_materials.pdf` updated to the revised supplement:
+  - Figure S2 replaced with the archived `FigS_support_fraction_sweep`. The earlier
+    render showed a Ledoit-Wolf value of 1.13 and a Panel D title the data did not
+    support.
+  - S5 reports the 500-seed refit of the default MCD fit, from
+    `TableS_support_fraction_seed_lookup.csv`, and Table S2 gains its MCD 1.00 row.
+  - S6's jitter range corrected to 3.46-3.48.
+  - Text, notation and layout corrections throughout.
+- README: the list of what is included now excludes the Table 2 sample description
+  and the characterizing-measure rows of Table 3, matching the manuscript's Open
+  Practices Statement. `05c` added to the run order.
+- MANIFEST:
+  - Figures S1, S3 and S4 now name their files.
+  - Figure 1 lists its inputs.
+  - Table 4 and S1 point to `05c` for the range counts.
+  - New sections list the three figures in `outputs/` that the paper does not show
+    and the supporting data files not tied to one exhibit.
+  - The Step 3 row no longer points to the unreleased leverage table.
+  - Notes that four auxiliary MCD outcomes in `Study1_summary.csv` have means only.
+- `run_all.bat` and `run_all.sh` run `05c` after `05b`.
+
 ### v1.2.0 (2026-10-16)
 
 - `outputs/` now holds the files from the run reported in the paper. Earlier
@@ -167,6 +199,12 @@ docstrings. Entries affecting reported values are marked.
 - New in archive v1.2.0. Redraws Figure 1 from the archived per-seed results so
   that the figure shows across-seed variability; run it after `05`, whose own
   version of Fig_study1 it overwrites.
+
+## 05c_calibration_ranges.py
+
+- New in archive v1.3.0. Computes, from the archived outputs and without re-running
+  anything, where the observed control-sample calibration quantities fall within
+  each Study 1 condition's across-seed range. Run it after `03` and `05`.
 
 ## 06_bootstrap_sample_size.py
 
